@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UserManager {
 
-    private Connection connection;
+    private final Connection connection;
 
     public UserManager() {
         connection = DBConnectionProvider.getInstance().getConnection();
